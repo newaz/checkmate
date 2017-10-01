@@ -1,0 +1,4 @@
+<resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">4HMqWMDsCAp4IFA2b3RZFcMtapvA0a46714b-0883-4169-867c-8b265c037a15</string>
+    <string name="app_name">checkmate</string>
+</resources>
