@@ -19,12 +19,15 @@ export default class checkmate extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native with codepush and Hello Maxify!
+          Welcome to React Native 4!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.android.js and me !
+          To get started, edit index.android.js
         </Text>
-
+        <Text style={styles.instructions}>
+          Double tap R on your keyboard to reload,{'\n'}
+          Shake or press menu button for dev menu
+        </Text>
       </View>
     );
   }
@@ -51,6 +54,7 @@ const styles = StyleSheet.create({
 
 
 let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
+codePush.sync({ updateDialog: true });
 checkmate = codePush(codePushOptions)(checkmate);
 
 AppRegistry.registerComponent('checkmate', () => checkmate);
