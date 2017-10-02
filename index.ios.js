@@ -12,6 +12,9 @@ import {
   View
 } from 'react-native';
 
+import codePush from "react-native-code-push";
+
+
 export default class checkmate extends Component {
   render() {
     return (
@@ -50,4 +53,8 @@ const styles = StyleSheet.create({
   },
 });
 
+let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
+checkmate = codePush(codePushOptions)(checkmate);
+
 AppRegistry.registerComponent('checkmate', () => checkmate);
+

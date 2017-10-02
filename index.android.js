@@ -19,7 +19,7 @@ export default class checkmate extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native 3!
+          Welcome to React Native with codepush!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.android.js
