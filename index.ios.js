@@ -20,7 +20,7 @@ export default class checkmate extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to React Native Codepush for ios!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
