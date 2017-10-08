@@ -19,7 +19,7 @@ export default class checkmate extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native 4!
+          Welcome to React Native 5555!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.android.js
@@ -53,8 +53,7 @@ const styles = StyleSheet.create({
 });
 
 
-let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
-codePush.sync({ updateDialog: true });
-checkmate = codePush(codePushOptions)(checkmate);
+
+checkmate = codePush({ updateDialog: true, installMode: codePush.InstallMode.IMMEDIATE })(checkmate);
 
 AppRegistry.registerComponent('checkmate', () => checkmate);
